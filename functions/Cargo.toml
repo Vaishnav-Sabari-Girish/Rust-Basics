@@ -10,4 +10,9 @@ src = "src/bin/square_funcion.rs"
 [[bin]]
 name = "abs_value"
 src = "src/bin/abs_value.rs"
+
+[[bin]]
+name = "factorial"
+srcx = "src/bin/factorial.rs"
+
 [dependencies]
