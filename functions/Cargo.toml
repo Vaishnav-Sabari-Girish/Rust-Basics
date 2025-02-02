@@ -7,4 +7,7 @@ edition = "2021"
 name = "square_function"
 src = "src/bin/square_funcion.rs"
 
+[[bin]]
+name = "abs_value"
+src = "src/bin/abs_value.rs"
 [dependencies]
