@@ -19,4 +19,13 @@ src = "src/bin/for_loop_2.rs"
 name = "for_loop_3"
 src = "src/bin/for_loop_3.rs"
 
+[[bin]]
+name = "loop_keyword"
+src = "src/bin/loop_keyword.rs"
+
+
+[[bin]]
+name = "loop_keyword_labels"
+src = "src/bin/loop_keyword_labels.rs"
+
 [dependencies]
