@@ -19,3 +19,19 @@ fn main() {
 }
 ``` 
 
+---
+
+## User input
+
+```rs 
+use std::io;
+
+fn main() {
+  let mut name: String = String::new();  //Empty String 
+  io::stdin().read_line(&mut name).expect("Error in reading input");
+
+  println!("Hello {}", name);
+}
+```
+
+---
