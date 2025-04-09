@@ -15,3 +15,4 @@ Make sure you have slides tool installed. If not here is the link to the tool
 ## Programs 
 
 1. [Hello World](actual_programs/hello_world/src/main.rs)
+2. [Variables](actual_programs/variables/src/main.rs)
