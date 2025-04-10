@@ -18,3 +18,5 @@ Make sure you have slides tool installed. If not here is the link to the tool
 2. [Variables](actual_programs/variables/src/main.rs)
 3. [User Input](actual_programs/user_input/src/main.rs)
 4. [Range of Values](actual_programs/range_of_value/src/main.rs)
+5. [Primitive Datatypes](actual_programs/Datatypes/primitive_datatypes/src/main.rs)
+6. [Compound Datatypes](actual_programs/Datatypes/compound_datatypes/src/main.rs)
