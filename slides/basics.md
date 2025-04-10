@@ -133,3 +133,32 @@ fn main(){
 |**Performance**| Slow (Due to heap allocation and ownership) | Faster (No allocation, just a reference)|
 |**Use case**| When you need to modify or build a String| When you only need to read or view a String|
 |**Example**| `let mut s = String::from("hello");` | `let s: &str = "hello";`|
+
+---
+
+## Pointers 
+
+Variables that point to a memory location. 
+
+In Rust, pointers are of 2 types 
+1. Safe or references (`&T` and `&mut T`)
+2. Unsafe or raw pointers (`*const` or `*mut`)
+
+```rs 
+fn main() {
+    let mut value = 10;
+    
+    //Safe Reference 
+    let ref_value = &value;
+    println!("Value via reference: {}", ref_value);
+    
+    //Raw pointer (Unsafe)
+    let raw_ptr = &mut value as *mut i32;
+    unsafe {
+        *raw_ptr = 20;   //Modify via rawpointer 
+        println!("Value of Raw Pointer: {}", *raw_ptr);
+    }
+    
+    println!("Final value: {}", value);
+}
+```
