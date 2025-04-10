@@ -102,3 +102,34 @@ fn main(){
 }
 ```
 
+---
+
+## Stack memory vs Heap memory 
+
+|Property|STACK|HEAP|
+|---|---|---|
+|**Memory Allocation**|Automatic (allocated/deallocated by the compiler)| Manual (programmer controls allocation/deallocation)|
+|**Access Speed**|Faster (due to LIFO structure and locality)|Slower (Due to dynamic allocationand pointer dereferencing)|
+|**Size Limit**| Fixed (limited by stack frame)|Dynamic size (limited by system memory)|
+|**Data lifetime**| Short lived (scoped to function calls)| Long-lived (persists until explicitely deallocated)|
+|**Usage**| Stores local variables , function call data| Stores dynamically sized long-term data (eg: `String` in Rust)| 
+
+
+---
+
+
+## String vs String slices (`&str`)
+
+|Property|Strings|String Slices (`&str`)|
+|---|---|---|
+|**Mutablility**|Mutable| Immutable |
+|**Growability**|Growable| Fixed Size|
+|**Ownership**|Owned `String` Type| Borrowed reference to `String` data|
+|**Memory Allocation**|Allocated on heap| Usually points to data on stack, heap or static memory|
+|**Type**| `String` struct| `&str` (reference to a String slice)|
+|**Creation**| Created with `String::from()` or `"".to_string()` | Derived from `String` or string literals (eg: "Hello")|
+|**Lifetime**|Lives as long as `String` owns the data|Tied to the lifetime of the borrowed data|
+|**Storage**|Stores the actual characters (owns the buffer)| Reference to a portion of a string (no ownership)|
+|**Performance**| Slow (Due to heap allocation and ownership) | Faster (No allocation, just a reference)|
+|**Use case**| When you need to modify or build a String| When you only need to read or view a String|
+|**Example**| `let mut s = String::from("hello");` | `let s: &str = "hello";`|
