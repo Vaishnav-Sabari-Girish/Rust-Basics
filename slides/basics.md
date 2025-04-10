@@ -162,3 +162,19 @@ fn main() {
     println!("Final value: {}", value);
 }
 ```
+
+---
+
+## Appending to a String 
+
+We will use `<String variable>.push_str(<String to be appended>);`
+
+```rs 
+fn main() {
+  let mut name: String = String::from("John Doe");   //Or "John Doe".to_string()
+  println!("Original String: {}", name);
+
+  name.push_str(" Hi there");
+  println!("New String: {}", name);
+}
+```
