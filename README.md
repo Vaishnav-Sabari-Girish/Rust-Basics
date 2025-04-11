@@ -22,3 +22,5 @@ Make sure you have slides tool installed. If not here is the link to the tool
 6. [Compound Datatypes](actual_programs/Datatypes/compound_datatypes/src/main.rs)
 7. [Pointers](actual_programs/pointers/src/main.rs)
 8. [Appending to a String](actual_programs/strings/src/main.rs)
+9. [Block Expressions](actual_programs/block_expressions/src/main.rs)
+10. [Functions](actual_programs/functions/src/main.rs)
