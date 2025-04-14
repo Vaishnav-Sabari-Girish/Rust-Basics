@@ -24,3 +24,4 @@ Make sure you have slides tool installed. If not here is the link to the tool
 8. [Appending to a String](actual_programs/strings/src/main.rs)
 9. [Block Expressions](actual_programs/block_expressions/src/main.rs)
 10. [Functions](actual_programs/functions/src/main.rs)
+11. [Fibonacci Series](actual_programs/fibonacci_series/src/main.rs)
